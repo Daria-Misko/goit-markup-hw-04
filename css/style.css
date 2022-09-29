@@ -162,6 +162,15 @@ ul {
 	background-color: var(--bg-color-dark);
 	text-align: center;
 	padding: 200px 0 200px 0;
+	max-width: 1600;
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/bg-image.jpeg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .hero-title {
@@ -278,8 +287,49 @@ ul {
 	color: var(--main-color-text);
 	font-size: 16px;
 	line-height: 1.18;
-	margin-bottom: 0;
+	margin-bottom: 16px;
 	text-align: center;
+}
+.social-links {
+	display: flex;
+	margin: 0 auto;
+	gap: 10px;
+	padding: 0 32px;
+}
+.social-link {
+	width: 44px;
+	height: 44px;
+	outline: 1px solid #188ce8;
+	border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+	background-color: var(--color-blue);
+}
+
+/* clients */
+.clients {
+	padding: 94px 0;
+}
+.title {
+	margin-bottom: 50px;
+}
+.clients-cards {
+	display: flex;
+	gap: 30px;
+	margin: 0 auto;
+}
+.clients-icon {
+	display: block;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	width: calc((100%- 200px) / 6);
+}
+.clients-icon:hover,
+.clients-icon:focus {
+	border: 1px solid var(--color-blue);
 }
 
 /* portfolio */
@@ -319,6 +369,11 @@ ul {
 }
 .examples-item {
 	width: calc((100% - 60px) / 3);
+}
+.examples-item:hover,
+.examples-item:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .examples-item-about {
 	border: 1px solid var(--border-cards-color);
